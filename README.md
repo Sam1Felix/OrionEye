@@ -273,7 +273,7 @@ Software Engineer & Intelligence Architect
 
 - 🌐 [facelive.net/orioneye](https://facelive.net/orioneye/)
 - 📧 [privacy@facelive.net](mailto:privacy@facelive.net)
-- 💼 [LinkedIn](https://www.linkedin.com/in/samuel-la-manna/)
+- 💼 [LinkedIn]([https://www.linkedin.com/in/samuel-la-manna/](https://www.linkedin.com/in/samuel-l-a499341b5/?locale=it))
 
 </td>
 </tr>
