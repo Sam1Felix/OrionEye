@@ -1,298 +1,179 @@
 <div align="center">
 
-<img width="1200" alt="OrionEye Banner" src="Banner-github.png" />
+<img width="1200" alt="OrionEye home page: live threat card on a 3D globe" src="screenshots/home.jpg" />
 
-# 🛰️ OrionEye v4.0
+# OrionEye v4.0
 
-### Cyber & Geospatial Intelligence Platform
+### Geospatial threat intelligence and active defence, local-first
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-facelive.net-00e5ff?style=for-the-badge)](https://facelive.net/orioneye/)
+[![Live](https://img.shields.io/badge/Live-orioneye.io-00d4ff?style=for-the-badge)](https://orioneye.io/)
 [![Version](https://img.shields.io/badge/Version-4.0-blueviolet?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)]()
 
-**Real-time cyber intelligence, geospatial analysis, space tracking, OSINT & AI orchestration.**\
-**Built entirely by one developer. Powered by Gemini AI.**
+**OrionEye shows who is attacking your servers on a live map, groups the attackers into campaigns
+and helps you stop them, with a person approving every change.**
 
-[🚀 Live Demo](https://facelive.net/orioneye/) · [📸 Screenshots](#-screenshots) · [📖 Features](#-feature-overview) · [🏗️ Architecture](#%EF%B8%8F-architecture) · [👤 Author](#-author)
-
----
-
-<table>
-<tr>
-<td align="center"><strong>20</strong><br><sub>Intelligence Modules</sub></td>
-<td align="center"><strong>52</strong><br><sub>AI Tools</sub></td>
-<td align="center"><strong>112+</strong><br><sub>Console Commands</sub></td>
-<td align="center"><strong>30+</strong><br><sub>API Endpoints</sub></td>
-<td align="center"><strong>18+</strong><br><sub>External APIs</sub></td>
-<td align="center"><strong>2</strong><br><sub>Languages (EN/IT)</sub></td>
-</tr>
-</table>
+[Live site](https://orioneye.io/) · [Threat Live](https://orioneye.io/landing/threat-live.html) · [MCP connector](https://orioneye.io/landing/mcp-connector.html) · [Plans](https://orioneye.io/landing/piani.html) · [Real case](https://orioneye.io/landing/caso-reale.html)
 
 </div>
 
----
-
-## 📖 Feature Overview
-
-OrionEye is a **full-stack intelligence platform** that combines network diagnostics, geospatial analysis, space tracking, OSINT tools and AI orchestration into a single interactive dashboard built on Google Maps.
-
-### 🔒 Cyber Intelligence
-| Module | Description |
-|--------|-------------|
-| **IP Geolocation** | Locate any IP address with ISP, ASN, city-level accuracy and map visualization |
-| **Traceroute Visualization** | Visual network path tracing with hop-by-hop geolocation on the map |
-| **DNS Lookup** | Full DNS resolution (A, AAAA, MX, NS, TXT, SOA, CNAME) |
-| **Ping & Latency** | Real-time host reachability testing with structured RTT |
-| **RIPE Atlas Probes** | Live map of RIPE NCC measurement probes worldwide |
-| **RIPE AS/Prefix Info** | Autonomous System and IP prefix intelligence |
-| **Network Builder** | Create custom network topologies (IX, datacenter, city nodes) with connections |
-| **Spectrometer** | Network signal spectrum analyzer visualization |
-
-### 🌍 Geospatial Intelligence
-| Module | Description |
-|--------|-------------|
-| **Google Maps Integration** | Full interactive map with satellite, terrain, hybrid views |
-| **Street View** | Immersive street-level exploration |
-| **Route Planning** | Walking and driving route calculation with distance/time |
-| **Traffic Cameras** | Live DOT traffic camera feeds on the map |
-| **Weather Overlay** | Real-time weather data via Open-Meteo and Windy integration |
-| **EV Charging Stations** | 550+ stations across 28 EU countries via OpenChargeMap API |
-
-### 🛸 Space & Aerospace
-| Module | Description |
-|--------|-------------|
-| **ISS Real-Time Tracker** | Live International Space Station position with orbit path |
-| **ESA Rocket Launches** | Upcoming and past launches from all agencies (SpaceX, NASA, ESA, Roscosmos, JAXA...) |
-| **Launch Pads** | Global launch sites mapped with details |
-| **Space Stations** | Active and historical space station tracking |
-| **Astronaut Database** | Current crew in space with bios |
-| **Space Events** | Conferences, EVAs, dockings and space milestones |
-| **Launch History** | Historical launch database with success/failure statistics |
-| **OpenSky Aircraft** | Live aircraft tracking with ADS-B data |
-| **CelesTrak Satellites** | Real-time satellite tracking (Starlink, GPS, weather, military...) |
-
-### 🌐 OSINT & Intelligence
-| Module | Description |
-|--------|-------------|
-| **NASA EONET** | Natural disaster events — wildfires, storms, earthquakes, volcanoes |
-| **NASA GIBS Satellite** | Multi-layer satellite imagery (MODIS, VIIRS, Landsat) |
-| **GDELT Conflicts** | Global conflict and protest monitoring |
-| **ACLED Data** | Armed conflict tracking and analysis |
-| **News Intelligence** | Real-time global news aggregation and search |
-| **Facebook OSINT** | Public Facebook data monitoring and alerts |
-| **RSS OSINT** | Custom RSS feed monitoring with keyword alerts |
-
-### 💼 Job Intelligence
-| Module | Description |
-|--------|-------------|
-| **Job Search** | Multi-platform job search (Adzuna, Remotive, JSearch) |
-| **Salary Intelligence** | Salary estimation by role, location and experience |
-| **Freelancer Discovery** | Find freelancers and contractors worldwide |
-
-### 🎨 Visual Effects
-| Effect | Description |
-|--------|-------------|
-| **NVG (Night Vision)** | Military-style green night vision filter |
-| **FLIR (Thermal)** | Infrared thermal imaging simulation |
-| **CRT** | Retro CRT monitor scanline effect |
-| **Cyber** | Cyan cyberpunk neon overlay |
+> This is a showcase repository: it documents the platform. The source code is proprietary and is not published here.
 
 ---
 
-## 🤖 AI Integration
+## In production today
 
-OrionEye features deep **Gemini AI** integration with **52 function-calling tools**. The AI can autonomously execute any platform command via natural language:
+Numbers from the production database and the published case study, read on **27 October 2026**.
 
-```
-> "Show me all SpaceX launches this year"
-> "Track the ISS and show me who's on board"  
-> "Locate 8.8.8.8 and trace the route from my IP"
-> "Find cybersecurity jobs in Berlin paying over 80k"
-> "Show conflicts in Ukraine from the last 30 days"
-> "Enable night vision and track military satellites"
-> "Find EV charging stations near Munich"
-```
-
-The AI understands context, chains multiple tools together, and provides intelligence analysis on the results. **Voice output** is supported via Google TTS.
+| Number | What it is |
+|---|---|
+| **29,582** | SSH login attempts recorded on our servers since 4 August 2026 |
+| **2,290 · 115** | attacking addresses tracked · countries they came from |
+| **513** | automatic blocks carried out by the defence rules |
+| **5,000 → 12** | SSH attempts per day on a client server, before and after blocking (0 successful logins) |
+| **13 → 0** | vulnerable packages on our server, closed in one evening by the patch sentinel |
+| **21** | data layers on the map, each with its declared source |
+| **96** | tools the AI assistant can use on the map and the platform |
+| **138,413** | lines of proprietary code in 8 components; all 197 open-source dependencies use permissive licences |
 
 ---
 
-## 🏗️ Architecture
+## The problem
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                     CLIENT (Browser)                     │
-│  TypeScript · Google Maps JS API · Gemini AI · CSS VFX  │
-└──────────────────────┬──────────────────────────────────┘
-                       │ HTTPS
-              ┌────────▼────────┐
-              │   Nginx Proxy   │
-              │  Let's Encrypt  │
-              └────────┬────────┘
-                       │
-         ┌─────────────▼─────────────┐
-         │    Node.js API Server     │
-         │  30+ endpoints · Pino     │
-         │  Rate Limiting · Cache    │
-         └─────────────┬─────────────┘
-                       │
-        ┌──────────────┼──────────────┐
-        ▼              ▼              ▼
-  ┌──────────┐  ┌───────────┐  ┌──────────┐
-  │  SQLite  │  │   Redis   │  │ External │
-  │  Auth &  │  │   Cache   │  │   APIs   │
-  │ Tracking │  │           │  │  (18+)   │
-  └──────────┘  └───────────┘  └──────────┘
-```
+Every server on the internet is probed thousands of times a day by programs looking for a weak password.
+The evidence exists, but it sits in a log file nobody reads, while it quietly costs CPU and energy.
+Whoever investigates a suspicious address opens five different portals and copies the results by hand.
 
-### Tech Stack
+## What OrionEye does
+
+| Step | |
+|---|---|
+| **1 · Detect** | Failed logins appear on the map the moment they arrive. |
+| **2 · Investigate** | One address, opened: where it comes from, who runs the network, its reputation, what it exposes. |
+| **3 · Correlate** | Scattered addresses become one coordinated campaign, with a confidence score and the reasons. |
+| **4 · Respond** | Block the whole campaign on your own servers, report it to public databases, share it with other analysts. |
+
+<img width="1200" alt="OrionEye app in demo mode: area analysis around Bamberg, incident story panel" src="screenshots/app-demo-map.jpg" />
+
+<sub>The app in public demo mode (sample data, no account needed): area analysis on the left, incident story on the right.</sub>
+
+---
+
+## Three products, one family
+
+| | | |
+|---|---|---|
+| **OrionEye** | *the radar* | The platform in the browser: a world map where sources switch on, an AI that reads them, and tools to defend servers. |
+| **OmniAgent OS** | *the hands* | The agent that runs on the customer's computer, also from the Pro USB key. It connects to their servers over SSH, reads them and defends them. |
+| **SentraLink** | *the stethoscope* | The local network console: reads routers and devices read-only (128 router profiles), measures the line, checks the PC's security and Wi-Fi. |
+
+Above all three sits a person: **the system proposes, the operator says yes or no.**
+
+---
+
+## Key features
+
+| Feature | What it does | Plan |
+|---|---|---|
+| **Map and 21 layers** | 3D globe, map, satellite, terrain. Malware C2 servers, aircraft, satellites, natural events, webcams, earthquakes, cyclones, news, submarine cables. | Free |
+| **Orion AI** | Ask in plain language; the AI reads the active layers and answers with data, using 96 tools. Pro can compare several models side by side. | Free · Pro |
+| **Attackers and campaigns** | Memory of who attacks your servers, including the "new" ones no public list knows; attackers grouped into botnet campaigns; one-click campaign block. | Pro |
+| **Automation with brakes** | Rules that act on their own, with a 24-hour simulation, never-block networks, an hourly limit, a log with undo and a "stop everything" switch. | Pro |
+| **Investigator** | Give it a goal ("is PHP vulnerable? fix it"): it investigates read-only, checks its hypotheses and proposes the fix. Nothing changes on a server without your yes. | Pro |
+| **Patch sentinel** | Compares the server's packages with Ubuntu security notices and the catalogue of exploited vulnerabilities (KEV), with the fix command already written. | Admin |
+| **Uncover Engine** | One question to several reconnaissance engines at once (Shodan, Censys, AbuseIPDB…), one record per address with who answered and who did not. | Pro · Enterprise |
+| **AI layer and alerts** | Watch topics such as "ransomware" or a malware family; alerts keep running with the page closed and arrive by email. | Free |
+| **Investigation diary** | Records a session and turns it into a report with map snapshots and a slide in MP4, PDF and HTML. | Free |
+| **Key vault** | AI and service keys are encrypted in your browser with a phrase only you know: the server stores only ciphertext. | Free |
+| **Threat Live** | Public page: news from 11 security sources, the vulnerabilities actually exploited (CISA KEV + EPSS), active C2 servers, and "Investigate" straight into the map. | Public |
+| **MCP connector** | Lets Claude and other compatible assistants query OrionEye in plain language. Private preview; blocking is never done through MCP. | Pro · Enterprise |
+| **Pro USB key** | Passwordless login with the certificate on the key (mTLS) and an encrypted vault that opens only on your machine. A copied key does not work. | Pro |
+
+<table>
+<tr>
+<td width="50%"><img alt="Threat Live: news from open security sources" src="screenshots/threat-live.jpg" /><br><sub>Threat Live: curated news, exploited CVEs and active C2 servers.</sub></td>
+<td width="50%"><img alt="MCP connector page" src="screenshots/mcp-connector.jpg" /><br><sub>The MCP connector page.</sub></td>
+</tr>
+</table>
+
+---
+
+## Use OrionEye from your AI assistant (MCP)
+
+The **MCP connector** (Model Context Protocol) lets an assistant such as Claude use OrionEye's tools:
+read resources, investigate an IP against public lists, read SSH threats, check exploited CVEs, search places
+and send a finding to the moderated Intel Feed.
+
+- **Pro:** 2 clients, investigation tools. **Enterprise:** the full set.
+- Blocking actions stay proposals for the operator to approve: **fail2ban is never driven from MCP.**
+- Status: **private preview.** [Details and technical guide →](https://orioneye.io/landing/mcp-connector.html)
+
+<img width="1200" alt="The MCP invitation card on the OrionEye home page" src="screenshots/mcp-invite.jpg" />
+
+<sub>New on the home page: MCP has its own menu entry, and first-time visitors get a card that points to it (Try it / Skip).</sub>
+
+---
+
+## Plans
+
+Three tiers, each one a verb.
+
+| | **Free · Explore** | **Pro · Investigate** | **Enterprise · Defend** |
+|---|---|---|---|
+| For | Anyone over 18 who wants to look | Security specialists, sysadmins, SMEs | SOCs, critical infrastructure, isolated networks |
+| Sign-in | Email and password, or Google | USB key, no password | Signed licence, installed at the customer (Docker) |
+| Adds | Map, open sources, Orion AI, Intel Feed (read) | OmniAgent and SentraLink, server defence, Uncover, multiple AI models | Everything in Pro, local AI models, works without internet |
+| Where data lives | On our server, like any online service | The part about your infrastructure stays on your machine | Nothing leaves the company |
+
+Pro and Enterprise are sold to businesses only. [Compare the plans →](https://orioneye.io/landing/piani.html)
+
+**Where does the data go?** Logs stay on the customer's servers, read by OmniAgent. If the customer chooses a cloud
+AI model, what they ask goes to that model; with Enterprise the models run locally. We don't say "zero cloud": we say what goes where.
+
+<table>
+<tr>
+<td width="72%"><img alt="Plans page" src="screenshots/plans.jpg" /></td>
+<td width="28%"><img alt="Home page on a phone" src="screenshots/mobile-home.jpg" /></td>
+</tr>
+</table>
+
+---
+
+## Technology
 
 | Layer | Technologies |
-|-------|-------------|
-| **Frontend** | TypeScript, Vite 4, Google Maps JavaScript API, CSS3 (custom VFX) |
-| **Backend** | Node.js, Express-style HTTP server, Pino logging |
-| **Database** | SQLite (better-sqlite3) — auth, sessions, visitor tracking |
-| **Cache** | Redis, in-memory LRU cache |
-| **AI** | Google Gemini 2.0 Flash — 52 function-calling tools |
-| **Infrastructure** | Nginx, PM2, Let's Encrypt SSL, Ubuntu VPS |
-| **Languages** | English, Italian (full i18n) |
+|---|---|
+| Front end | TypeScript, Vite, MapLibre GL (map and WebGL globe), Cytoscape (topology graphs), hls.js (live streams) |
+| Back end | Node.js, SQLite (better-sqlite3), Redis cache, Pino logging, rate limiting |
+| Sign-in | Email and password, Google, passkeys (WebAuthn), USB key with mTLS client certificate |
+| AI | Gemini by default; OpenAI, Claude, Mistral, Groq, DeepSeek, OpenRouter on the customer's key; Ollama for local models |
+| Defence | fail2ban and nftables on the protected servers, driven by OmniAgent with local safety rules that always win |
+| Voice | Piper neural text-to-speech, self-hosted |
+| Deployment | VPS behind nginx for the SaaS; Docker on the customer's premises for Enterprise |
 
-### External APIs Integrated
-
-| API | Purpose |
-|-----|---------|
-| Google Maps Platform | Maps, Geocoding, Directions, Street View |
-| Google Gemini AI | Natural language AI with function calling |
-| Google TTS | Voice synthesis for AI responses |
-| Google Analytics 4 | Traffic analytics via Data API |
-| NASA EONET | Natural disaster events |
-| NASA GIBS | Satellite imagery layers |
-| Launch Library 2 | Rocket launches worldwide |
-| OpenSky Network | Live aircraft ADS-B tracking |
-| CelesTrak | Satellite TLE orbital data |
-| RIPE Atlas / RIPEstat | Network measurement probes and BGP data |
-| GDELT | Global conflict event data |
-| ACLED | Armed conflict database |
-| NewsAPI | Global news aggregation |
-| Adzuna | Job listings (multi-country) |
-| Remotive | Remote job listings |
-| OpenChargeMap | EV charging station network |
-| ip-api | IP geolocation enrichment |
-| Open-Meteo / Windy | Weather data and wind maps |
+Languages: the app and site are in English and Italian; legal pages also in German.
 
 ---
 
-## 🖥️ Console Commands
+## Who builds it
 
-OrionEye includes a **full command-line console** with 112+ commands. Examples:
+**Lowegate Studio**, a small team in Germany. The person who writes the product is also the person who answers when you ask how it works.
 
-```bash
-# Network
-ping google.com          # Ping a host
-trace 1.1.1.1            # Visual traceroute
-dns example.com          # DNS lookup
-myip                     # Show your public IP
-latency cloudflare.com   # Measure RTT
+| | |
+|---|---|
+| **Samuel La Manna** | Founder, CEO and Lead Architect: designed and wrote OrionEye |
+| **Juljan Hebibasi** | Business & Investor Relations |
+| **Carmelo Bellia** | Managing Director & Head of Operations, FoodLink |
+| **Angela** | SEO & Digital Content Strategist |
 
-# Space
-iss                      # Track the ISS live
-launches                 # Upcoming rocket launches
-astronauts               # Who's in space?
-satellites starlink      # Track Starlink constellation
-aircraft                 # Live aircraft radar
-
-# Intelligence
-news "climate change"    # Search global news
-conflicts ukraine        # GDELT conflict data
-events                   # NASA natural events
-ripe probes IT           # RIPE Atlas probes in Italy
-facebook alerts          # Facebook OSINT alerts
-
-# Map & Visualization
-vfx nvg                  # Night vision mode
-vfx flir                 # Thermal imaging
-streetview 48.8,2.3      # Paris Street View
-route "Rome" "Milan"     # Route planning
-charging                 # EV charging stations
-
-# AI
-ask "anything"           # Talk to Gemini AI
-voice on                 # Enable voice output
-lang it                  # Switch to Italian
-```
+- Web: [orioneye.io](https://orioneye.io/) · [lowegatestudio.de](https://www.lowegatestudio.de/)
+- Email: [contact-orioneye@lowegatestudio.de](mailto:contact-orioneye@lowegatestudio.de)
+- LinkedIn: [Samuel La Manna](https://www.linkedin.com/in/samuel-l-a499341b5/)
 
 ---
 
-## 📸 Screenshots
+## Disclaimer
 
-> **[🌐 Try the live demo →](https://facelive.net/orioneye/)**
-
-<div align="center">
-
-| Dashboard | ISS Tracking |
-|:---------:|:------------:|
-| *Main intelligence dashboard with interactive map* | *Real-time ISS orbit visualization* |
-
-| Traceroute | Night Vision |
-|:----------:|:------------:|
-| *Visual hop-by-hop traceroute on world map* | *NVG military-style filter effect* |
-
-</div>
-
----
-
-## 🔐 Security & Privacy
-
-- **GDPR Compliant** — Full privacy policy, cookie transparency, data subject rights
-- **No Third-Party Tracking** — No Google Analytics cookies on the platform itself
-- **Rate Limiting** — All API endpoints protected with configurable rate limits
-- **Input Sanitization** — All user inputs validated and sanitized server-side
-- **Secure Headers** — CORS, CSP, and security headers configured via Nginx
-- **Auth System** — bcrypt/scrypt password hashing, JWT tokens, session management
-- **No Data Selling** — Zero data shared with or sold to third parties
-
----
-
-## 📄 Legal
-
-- [Privacy Policy](https://facelive.net/orioneye/landing/privacy.html)
-- [Terms of Service](https://facelive.net/orioneye/landing/terms.html)
-- [Privacy Policy (Mobile)](https://facelive.net/orioneye/landing/privacy-mobile.html)
-- [Privacy Policy (Simple IT)](https://facelive.net/orioneye/landing/privacy-simple.html)
-
----
-
-## 👤 Author
-
-<table>
-<tr>
-<td>
-
-**Samuel La Manna**\
-Software Engineer & Intelligence Architect
-
-- 🌐 [facelive.net/orioneye](https://facelive.net/orioneye/)
-- 📧 [privacy@facelive.net](mailto:privacy@facelive.net)
-- 💼 [LinkedIn]([https://www.linkedin.com/in/samuel-la-manna/](https://www.linkedin.com/in/samuel-l-a499341b5/?locale=it))
-
-</td>
-</tr>
-</table>
-
----
-
-## ⚠️ Disclaimer
-
-> This repository contains **documentation and information only** — no source code is published.\
-> OrionEye is a proprietary project. All rights reserved © 2024–2026 Samuel La Manna.\
-> The platform is intended for **educational and research purposes** in the fields of cybersecurity, geospatial intelligence, and network analysis.
-
----
-
-<div align="center">
-
-**Built with 🖤 by [Samuel La Manna](https://facelive.net/orioneye/)**
-
-*One developer. 20 modules. 52 AI tools. Zero compromises.*
-
-</div>
+> This repository contains documentation and screenshots only: no source code is published.
+> OrionEye is proprietary software of Lowegate Studio (Samuel La Manna). All rights reserved © 2024–2026.
+> Screenshots were taken from the live site on 28 October 2026; the app screenshot uses the public demo with sample data.
