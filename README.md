@@ -82,6 +82,7 @@ Above all three sits a person: **the system proposes, the operator says yes or n
 | **Investigator** | Give it a goal ("is PHP vulnerable? fix it"): it investigates read-only, checks its hypotheses and proposes the fix. Nothing changes on a server without your yes. | Pro |
 | **Patch sentinel** | Compares the server's packages with Ubuntu security notices and the catalogue of exploited vulnerabilities (KEV), with the fix command already written. | Admin |
 | **Uncover Engine** | One question to several reconnaissance engines at once (Shodan, Censys, AbuseIPDB…), one record per address with who answered and who did not. | Pro · Enterprise |
+| **Mail check** | Connect a mailbox and OrionEye checks the inbox of the last 90 days, read-only, for phishing, dangerous attachments and fake senders, with the reasons in plain words. | Free · Pro |
 | **AI layer and alerts** | Watch topics such as "ransomware" or a malware family; alerts keep running with the page closed and arrive by email. | Free |
 | **Investigation diary** | Records a session and turns it into a report with map snapshots and a slide in MP4, PDF and HTML. | Free |
 | **Key vault** | AI and service keys are encrypted in your browser with a phrase only you know: the server stores only ciphertext. | Free |
@@ -95,6 +96,48 @@ Above all three sits a person: **the system proposes, the operator says yes or n
 <td width="50%"><img alt="MCP connector page" src="screenshots/mcp-connector.jpg" /><br><sub>The MCP connector page.</sub></td>
 </tr>
 </table>
+
+---
+
+## Check your mailbox for phishing
+
+*New, 29 October 2026.* In the **Mail** panel you connect a mailbox and OrionEye checks the messages that arrived in
+the inbox over the last 90 days. It is read-only: nothing is moved, deleted or marked as read.
+
+<img width="436" align="right" alt="The Mail panel: 64 messages checked, 2 dangerous, with the reasons written as sentences" src="screenshots/mail-check.jpg" />
+
+Every message gets a traffic light (green, yellow or red). For the yellow and red ones the panel says **why, in plain
+words**, and what to do. There are no technical codes. For example:
+
+- *“A link shows www.paypal.com but leads to 185.12.34.56.”*
+- *“The attachment “Invoice_10.pdf.exe” pretends to be a document but is a program.”*
+- *“The sender looks like a company, but a reply goes to a private mailbox: the fake-boss or fake-supplier scheme.”*
+
+**What it looks at:**
+- the SPF, DKIM and DMARC verdict recorded by the receiving provider;
+- names that imitate a brand (banks, couriers, PayPal, Microsoft…);
+- links that show one site and lead to another, numeric or disguised addresses, shortened links;
+- executable attachments, double extensions, macros, web pages sent as attachments, password-protected archives;
+- replies diverted to private mailboxes;
+- urgency and requests for passwords;
+- viruses, found by ClamAV.
+
+| | **Free** | **Pro** |
+|---|---|---|
+| Mailboxes | 1 | up to 100 |
+| Check | once every 30 days, up to 2,000 messages | whenever you need it, up to 5,000 messages |
+
+**Privacy by design:**
+- The password is encrypted on our server and never sent back to the browser.
+- Only risky messages are kept (sender, date, the subject cut to 100 characters, the reasons). The body and the
+  attachments are never kept.
+- The analysis runs entirely on our own server: no message, address or link goes to third parties.
+- Deleting the mailbox erases everything.
+
+Gmail, Yahoo, iCloud, Libero, Aruba, GMX, WEB.DE, IONOS, OVH, Zoho and most mail domains work today. Outlook and
+Microsoft 365 come next, with Microsoft sign-in, followed by continuous monitoring with email alerts for Pro.
+
+<br clear="right">
 
 ---
 
