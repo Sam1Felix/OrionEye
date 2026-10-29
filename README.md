@@ -82,7 +82,7 @@ Above all three sits a person: **the system proposes, the operator says yes or n
 | **Investigator** | Give it a goal ("is PHP vulnerable? fix it"): it investigates read-only, checks its hypotheses and proposes the fix. Nothing changes on a server without your yes. | Pro |
 | **Patch sentinel** | Compares the server's packages with Ubuntu security notices and the catalogue of exploited vulnerabilities (KEV), with the fix command already written. | Admin |
 | **Uncover Engine** | One question to several reconnaissance engines at once (Shodan, Censys, AbuseIPDB…), one record per address with who answered and who did not. | Pro · Enterprise |
-| **Mail check** | Connect a mailbox and OrionEye checks the inbox of the last 90 days, read-only, for phishing, dangerous attachments and fake senders, with the reasons in plain words. | Free · Pro |
+| **Mail check** | Connect a mailbox and OrionEye checks the inbox of the last 90 days, read-only, for phishing, dangerous attachments and fake senders, with the reasons in plain words and an AI report. Pro watches new mail every 10 minutes and emails you when something dangerous arrives. | Free · Pro |
 | **AI layer and alerts** | Watch topics such as "ransomware" or a malware family; alerts keep running with the page closed and arrive by email. | Free |
 | **Investigation diary** | Records a session and turns it into a report with map snapshots and a slide in MP4, PDF and HTML. | Free |
 | **Key vault** | AI and service keys are encrypted in your browser with a phrase only you know: the server stores only ciphertext. | Free |
@@ -126,16 +126,20 @@ words**, and what to do. There are no technical codes. For example:
 |---|---|---|
 | Mailboxes | 1 | up to 100 |
 | Check | once every 30 days, up to 2,000 messages | whenever you need it, up to 5,000 messages |
+| Continuous monitoring | — | new messages every 10 minutes, with an email as soon as a dangerous one arrives |
+| AI report | yes | yes |
 
 **Privacy by design:**
 - The password is encrypted on our server and never sent back to the browser.
 - Only risky messages are kept (sender, date, the subject cut to 100 characters, the reasons). The body and the
   attachments are never kept.
 - The analysis runs entirely on our own server: no message, address or link goes to third parties.
+- The AI report is written by the model you chose, which receives only counts (per kind of trick and per week),
+  never senders, subjects or links. *Listen* reads it aloud.
 - Deleting the mailbox erases everything.
 
 Gmail, Yahoo, iCloud, Libero, Aruba, GMX, WEB.DE, IONOS, OVH, Zoho and most mail domains work today. Outlook and
-Microsoft 365 come next, with Microsoft sign-in, followed by continuous monitoring with email alerts for Pro.
+Microsoft 365 come next, with Microsoft sign-in.
 
 <br clear="right">
 
